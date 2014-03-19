@@ -329,7 +329,7 @@
     Backbone.DeepModel = DeepModel;
 
     //For use in NodeJS
-    if (typeof module != 'undefined') module.exports = DeepModel;
+    if (typeof module != 'undefined' && module.exports) module.exports = DeepModel;
 
     return Backbone;
 
